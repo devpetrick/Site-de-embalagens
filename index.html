@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Embalagens</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/images/iconsite.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Botão fixed do whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=5511962211844" target="_blank">
+        <img id="butomfixed" src="./assets/img/images/whatsapp.png" alt="whatsapp">
+    </a>
+
+    <!-- Cabeçalho  -->
+    <div class="header">
+        <div class="boasvindas">
+            <h1 class="boavinda">Sejam bem-vindos</h1>
+        </div>
+        <div class="hotbar">
+            <div class="contexd">
+                <a  href="./index.html">
+                    <img class="img" src="./assets/img/images/logo-principal.png" alt="logo">
+                </a>
+                <div class="caixa-de-email">
+                    <input class="input2" id="email" type="text" name="email" placeholder="E-mail">
+                    <input class="enviar" onclick="enviado()" type="submit" value="Enviar">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="segmentos">
+        <ul>
+            <li><a class="prod" href="#">MOVELEIRO</a>
+                <ul>
+                    <li><a class="nome-produtos" href="./plastico-bolha/">Plástico bolha</a></li>
+                    <li><a class="nome-produtos" href="./papel-parana/">Papel paraná</a></li>
+                    <li><a class="nome-produtos" href="./filme-stretch/">Filme strech</a></li>
+                </ul>
+            </li>
+
+            <li><a class="prod" href="#">E-COMERCE</a>
+                <ul>
+                    <li><a class="nome-produtos" href="./almofada-de-ar/">Almofada de ar</a></li>
+                    <li><a class="nome-produtos" href="./envelope-de-seguranca/">Envelope de segurança</a></li>
+                    <li><a class="nome-produtos" href="./saco-bolha/">Saco bolha</a></li>
+                </ul>
+            </li>
+
+            <li><a class="prod" href="#">ESPUMAÇÃO</a>
+                <ul>
+                    <li><a class="nome-produtos" href="./embalagem-para-colchao/">Embalagem para colchão / cama box</a></li>
+                    <li><a class="nome-produtos" href="./papel-kraft/">Papel kraft</a></li>
+                    <li><a class="nome-produtos" href="./saco-preto/">Saco preto</a></li>
+                    <li><a class="nome-produtos" href="./filmes-pead/">Filme pead</a></li>
+                </ul>
+            </li>
+
+            <li><a class="prod" href="#">METALÚRGICO</a>
+                <ul>
+                    <li><a class="nome-produtos" href="./etiquetas-adesivas/">Etiquetas</a></li>
+                    <li><a class="nome-produtos" href="./saco-com-impressao/">Saco com impressão</a></li>
+                </ul>
+            </li>
+
+            <li><a class="prod" href="#">ALIMENTÍCIO</a>
+                <ul>
+                    <li><a class="nome-produtos" href="./saco-zip-kraft/">Saco zip kraft</a></li>
+                    <li><a class="nome-produtos" href="./saco-stand-pouch/">Saco stand pouch</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+
+        <div class="slides">
+            <!-- raidos Buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Fim raidos Buttons -->
+
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="./assets/img/image-promo/Bem-vindo-pc.png" alt="bem-vindos" />
+            </div>
+
+            <div class="slide">
+                <img src="./assets/img/image-promo/promoção-especial-pc.jpeg" alt="Promoção" />
+            </div>
+
+            <div class="slide">
+                <img src="./assets/img/image-promo/quem-somos-pc.png" alt="quem somos" />
+            </div>
+            <!-- Fim Slide images -->
+        </div>
+        <!-- manual-navigation -->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+        <!--Fim manual-navigation -->
+        <!-- Texto -->
+    <div>
+        <h1 class="text-tp0">CONHEÇA TODOS OS </h1>
+        <h1 class="text-tp1">PRODUTOS DISPONIVEIS </h1>
+    </div>
+    <!-- FIM Texto -->
+
+    <!-- COLLECTION -->
+    
+    <div class="container-collection">
+
+        <div class="papel-parana box" onmouseover="mostrarvermais0()" onmouseout="ocutarvermais0()">
+            <a href="./papel-parana/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/moveleiro/papel-parana.png" alt="papel-parana">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Papel parana</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="plastico-bolha box" onmouseover="mostrarvermais1()" onmouseout="ocutarvermais1()">
+            <a href="./plastico-bolha/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/moveleiro/plastico-bolha.png" alt="plasticobolha">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Plástibo bolha</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="filme-stretch box" onmouseover="mostrarvermais2()" onmouseout="ocutarvermais2()">
+            <a href="./filme-stretch/" class="my-link">
+                <div class="box-img">
+                    <img class="filme-stretchIMG" src="./assets/img/image-prod/moveleiro/filme-stretch.png" alt="filme-stretch" height="250">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Filme stretch</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais3()" onmouseout="ocutarvermais3()">
+            <a href="./envelope-de-seguranca/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/e-comerce/envelope-de-seguranca.png" alt="Envelope-de-segurança">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Envelope de segurança</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais4()" onmouseout="ocutarvermais4()">
+            <a href="./saco-bolha/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/e-comerce/saco-bolha.png" alt="Saco-bolha">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Saco bolha</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais5()" onmouseout="ocutarvermais5()">
+            <a href="./embalagem-para-colchao/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/espumação/embalagem-para-colchão.png" alt="embalagem-para-colchão">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Embalagem para colchão</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais6()" onmouseout="ocutarvermais6()">
+            <a href="./papel-kraft/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/espumação/papel-kraft.png" alt="papel-kraft">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Papel kraft</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais7()" onmouseout="ocutarvermais7()">
+            <a href="./saco-preto/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/espumação/saco-preto.png" alt="saco-preto">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Saco preto</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais8()" onmouseout="ocutarvermais8()">
+            <a href="./filmes-pead/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/espumação/filmes-pead.png" alt="filmes-pead">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Filmes pead</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais9()" onmouseout="ocutarvermais9()">
+            <a href="./etiquetas-adesivas/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/metalúrgico/Etiquetas-Adesivas.png" alt="Etiquetas-Adesivas">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Etiquetas adesivas</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais10()" onmouseout="ocutarvermais10()">
+            <a href="./saco-com-impressao/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/metalúrgico/saco-com-impressão.png" alt="saco-com-impressão">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Saco com impressão</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais11()" onmouseout="ocutarvermais11()">
+            <a href="./saco-zip-kraft/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/alimentício/saco-zip-kraft.png" alt="saco-zip-kraft">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Saco zip kraft</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais12()" onmouseout="ocutarvermais12()">
+            <a href="./saco-stand-pouch/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/alimentício/saco-stand-pouch.png" alt="saco-stand-pouch">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Saco stand pouch</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="almofada-de-ar box" onmouseover="mostrarvermais13()" onmouseout="ocutarvermais13()">
+            <a href="./almofada-de-ar/" class="my-link">
+                <div class="box-img">
+                    <img src="./assets/img/image-prod/e-comerce/almofada-de-ar.png" alt="almofada-de-ar">
+                </div>
+                <div class="box__desc">
+                    <div class="box__name">
+                        <p>Almofada de ar</p>
+                        <div class="box__value">
+                            <span>Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- FIM COLLECTION -->
+
+    <!-- ENTRE EM CONTATO -->
+    <div class="back-contato">
+        <div class="entre-em-contato">
+            <div class="box-text-contato">
+                <h1 class="text-prazer">Seria um prazer atender você!</h1>
+                <h2 class="text-conhecer">venha conhecer nossa tabela de valores!</h2>
+            </div>
+            <div>
+                <a class="button" href="https://api.whatsapp.com/send?phone=5511962211844" target="_blank">
+                    ENTRE EM CONTATO
+                </a>
+            </div>
+            <div class="box-redesocial">
+                <div class="rede-social ">
+                    <a href="https://www.facebook.com/profile.php?id=100087622334579&mibextid=ZbWKwL" target="_blank">
+                        <img class="icon-redes-sociais" src="./assets/img/images/facebook .png" alt="facebook">
+                    </a>
+                </div>
+                <div class="rede-social icon-insta">
+                    <a href="https://www.instagram.com/senhorembalagens1/" target="_blank">
+                        <img class="icon-redes-sociais" src="./assets/img/images/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="rede-social">
+                    <a href="mailto:senhorembalagens@gmail.com">
+                        <img class="icon-redes-sociais" src="./assets/img/images/email.png" alt="email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM ENTRE EM CONTATO -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
